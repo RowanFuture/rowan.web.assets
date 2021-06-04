@@ -1,0 +1,257 @@
+.title {
+    height:30vh;
+    padding:1rem;
+    z-index: 2;
+    position:relative;
+    width: calc(100% - 2rem);
+}
+html {
+    width:100%;
+}
+img {
+    max-width:100%;
+    max-height:100%;
+}
+.title img {
+    min-height:25vh;
+}
+body {
+    margin:0;
+    text-align:center;
+    background-color: #100354;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+a {
+    color:#2096dd;
+    font-weight: bold;
+    text-decoration: underline;
+}
+a:visited {
+    color: #2096dd;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* game pages ----------------------------------------------------------------------*/
+.icon {
+    width:10rem;
+    height:10rem;
+    max-width:10vw;
+    max-height:10vw;
+    margin-top:1rem;
+    margin-left:1rem;
+    border-radius: 1rem;
+}
+/* bg */
+.bg-fixed {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    min-height:100vh;
+}
+.bg-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    min-height:100vh;
+}
+/* fg stuff */
+.fg-top {
+    background-repeat: repeat-x;
+    /* background-size: contain; */
+    background-size: cover;
+    position: absolute;
+    height:calc(30vh + 2rem);
+    background-attachment: fixed;
+    width:100%;
+    left:0;
+    z-index:1;
+}
+.fg-fixed {
+    position: fixed;
+    width:100%;
+    max-width:80vw;
+    height:80vh;
+    top:10vh;
+    left:0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    pointer-events: none;
+    z-index:1;
+}
+.small {
+    height:5rem;
+}
+.smaller {
+    height:3rem;
+}
+.logo-sidebar {
+    float:left;
+    position: fixed;
+}
+.nosel {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.gamepage {
+    /* height: calc( 65vh - 2rem ); */
+    /* max-height:60rem; */
+    margin:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    border-radius: 1rem;
+    /* background-color: black; */
+    /* transform: rotate(5deg); */
+}
+.gameinfo-panel {
+    width:100%;
+    height:calc(100vh - (100vh - (30vh + 2rem) - 3rem));
+    /* height:calc(100% - (30vh + 4rem)); */
+    padding:0;
+    font-size: 1.2rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    background: inherit;
+    /* -webkit-backdrop-filter: blur(2rem); */
+    position: relative;
+    overflow: hidden;
+    z-index:10;
+}
+.gameinfo {
+    max-width:max(25%,1080px);
+    margin: auto;
+}
+.gamelogo {
+    width:100%;
+    /* height: 70%; */
+    max-height:50%;
+    margin-bottom: 1rem;
+}
+.navbar {
+    color:white;
+    height:3rem;
+    background-color:#2096dd;
+    font-weight: bold;
+    font-size: 1.4rem;
+    position: relative;
+    margin:0;
+}
+.navbarlink {
+    transform: scale(.9) translateY(5%);
+    display: inline-block;
+    transition: all .2s ease-out;
+    height: 100%;
+}
+.navbarlink:hover {
+    transform: translateY(-20%) scale(1.3);
+}
+.navbarlink img {
+    height:100%;
+    max-width: 20vw;
+    position:relative; 
+    z-index:20;
+}
+.navbarlink:not(:first-child) {
+    margin-left: min( 10vw, 5rem );
+}
+.gametext {
+    background: rgba(255,255,255,.5);
+    /* transform: scale(1.055); */
+    margin:0;
+    padding:1rem;
+    border-radius: 1rem;
+    /* transform: scale(1.055); */
+    white-space: pre-wrap;
+}
+.press-logo {
+    float:right;
+    height:min(4rem,15%);
+    margin-top:1.5rem;
+}
+.gamelink {
+    /* max-height:100%; */
+    height:auto;
+    width:auto;
+    margin:1rem;
+    position: relative;
+    display: inline-block;
+    top:10%;
+    z-index:10;
+    background-color: rgba(255,255,255,.7);
+    box-shadow: 1px 4px 22px 9px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 1px 4px 22px 9px rgba(255,255,255,0.75);
+    -moz-box-shadow: 1px 4px 22px 9px rgba(255,255,255,0.75);
+}
+.gamelink img {
+    
+    max-height: 10vh;
+}
+.clear {
+    clear: left;
+}
+.break {
+    height:calc(100vh - 2 * (30vh + 2rem) - 3rem);
+}
+.roletable {
+    margin:0px;
+    border-collapse: collapse;
+    table-layout: fixed ;
+}
+.roletable tr td {
+    padding-right:1rem;
+}
+.roletable tr {
+    border-bottom: 2px solid white;
+}
+.roles {
+    color:inherit;
+    display: inline-block;
+    padding:1rem;
+    border-radius: 1rem;
+    transform: scale(1.055);
+    /* background-color:rgba(255,255,255,.4); */
+    padding:1rem;
+    float:left;
+}
+.role, .person {
+    font-size: 1.3rem;
+}
+/* tooltips ---------------------------------------------------------------*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: .2rem .4rem;
+    border-radius: 6px;
+    margin-left:.5rem;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip .tooltiptext .top {
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+.container {
+    color:white;
+}

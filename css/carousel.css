@@ -1,0 +1,70 @@
+body {
+    overflow: hidden;
+}
+#game-carousel {
+    width:100%;
+    /* position:absolute; */
+}
+.card-container {
+    perspective-origin: 50% 50%;
+    perspective: 100vw;
+    width:40%;
+    max-width:50rem;
+    height:50%;
+    max-height:32rem;
+    position: absolute;
+    top:35vh;
+    left: 50%;
+    -webkit-transition : -webkit-filter 500ms linear;
+    margin-top:min(3rem,20vh);
+    z-index: 30;
+}
+.gamecard {
+    width:100%;
+    height:100%;
+    /* width:50%; */
+    /* max-width:50rem; */
+    /* height:100%; */
+    /* height: calc( 65vh - 2rem ); */
+    /* max-height:32rem; */
+    margin:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    border-radius: 1rem;
+    background-color: black;
+    position: absolute;
+    transform: rotateX(90deg);
+    transition: transform .5s;
+    box-shadow: 0px 0px 8px 1px #00000044;
+    overflow: hidden;
+    border:.5rem white solid;
+}
+.gamecard:hover {
+}
+.gloss {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 20em;
+    height: 20em;
+    margin-left: -6em;
+    margin-top: -17em;
+    mix-blend-mode: overlay;
+    opacity: 1;
+    will-change: transform;
+    transition: transform .5s;
+}
+.gloss.g-2 {
+    background: radial-gradient(circle farthest-corner at 50% 50%, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 40%);
+    transform: translateY(0%) translateX(90%);
+}
+.gloss.g-1 {
+    background: radial-gradient(circle farthest-corner at 50% 50%, rgba(255,255,255,1) 20%, rgba(255,255,255,0) 60%);
+    transform: translateY(-10%) translateX(90%);
+}
+.gamecard .gameinfo {
+    /* background-color:rgba(255,255,255,.8); */
+    background-color: transparent;
+}
