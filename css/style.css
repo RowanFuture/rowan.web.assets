@@ -151,6 +151,8 @@ a:visited {
 }
 .navbarlink:hover {
     transform: translateY(-20%) scale(1.3);
+	z-index: 10000 !important;
+    position: relative;
 }
 .navbarlink img {
     height:100%;
