@@ -159,7 +159,8 @@ a:visited {
     z-index:20;
 }
 .navbarlink:not(:first-child) {
-    margin-left: min( 10vw, 5rem );
+    //margin-left: min( 10vw, 5rem );
+	margin: 0 1rem;
 }
 .gametext {
     background: rgba(255,255,255,.5);
