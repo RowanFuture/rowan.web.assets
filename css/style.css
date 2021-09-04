@@ -258,3 +258,34 @@ a:visited {
 .container {
     color:white;
 }
+@media (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .navbarlink {
+        transform: scale(.9) translateY(0%);
+    }
+    .mailchimp-embed {
+        display: block;
+        width:100%;
+        transform: translate(0,10%);
+        margin:auto;
+    }
+    .subbtn:hover {
+        padding: 0 !important;
+        transform: scale(1.1);
+    }
+    .card-container {
+        margin-top: min(8rem,19vh);
+        height: 35%;
+    }
+    .gamelink {
+        width: 30%;
+    }
+    #iframe {
+        display: none;
+    }
+    .gamepage .title img {
+        padding-top: 3rem;
+    }
+  }
