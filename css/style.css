@@ -1,30 +1,30 @@
 
 @media (max-width: 600px) {
     .navbarlink {
-        transform: scale(.9) translateY(0%);
+        transform: scale(.9) translateY(0%) !important; 
     }
     .mailchimp-embed {
-        display: block;
-        width:100%;
-        transform: translate(0,10%);
-        margin:auto;
+        display: block !important;
+        width:100% !important;
+        transform: translate(0,10%) !important;
+        margin:auto !important;
     }
     .subbtn:hover {
         padding: 0 !important;
-        transform: scale(1.1);
+        transform: scale(1.1) !important;
     }
     .card-container {
-        margin-top: min(8rem,19vh);
-        height: 35%;
+        margin-top: min(8rem,19vh) !important;
+        height: 35% !important;
     }
     .gamelink {
-        width: 30%;
+        width: 30% !important;
     }
     #iframe {
-        display: none;
+        display: none !important;
     }
     .gamepage .title img {
-        padding-top: 3rem;
+        padding-top: 3rem !important;
     }
   }
 .title {
