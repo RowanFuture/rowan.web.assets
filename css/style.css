@@ -35,7 +35,7 @@
     width: calc(100% - 2rem);
 }
 html {
-    width:100%;
+    width:100vw;
 }
 img {
     max-width:100%;
@@ -50,7 +50,7 @@ body {
     background-color: #100354;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-    width: 100%;
+    width: 100vw;
 }
 a {
     color:#2096dd;
